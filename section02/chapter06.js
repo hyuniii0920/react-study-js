@@ -12,7 +12,7 @@ for (let i = 0; i < arr2.length; i++) {
 }
 
 // 1.2 for of 반복문
-for (let item of arr) {
+for (let item of arr) { //배열 순회를 위한 반복문
   //   console.log(item);
 }
 
@@ -45,3 +45,6 @@ for (let key in person) {
   const value = person[key];
   console.log(key, value);
 }
+
+// 배열 순회 = for of
+// 객체 순회 = for in

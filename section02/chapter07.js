@@ -10,6 +10,8 @@ const newLength = arr1.push(4, 5, 6, 7);
 let arr2 = [1, 2, 3];
 const poppedItem = arr2.pop();
 
+
+//시프트,언시프트는 푸시팝보다 좀 느림
 // 3. shift
 // 배열의 맨 앞에 있는 요소를 제거, 반환
 let arr3 = [1, 2, 3];
@@ -23,7 +25,7 @@ const newLength2 = arr4.unshift(0);
 // 5. slice
 // 마치 가위처럼, 배열의 특정 범위를 잘라내서 새로운 배열로 반환
 let arr5 = [1, 2, 3, 4, 5];
-let sliced = arr5.slice(2, 5);
+let sliced = arr5.slice(2, 5); //2번째는 +1 해줘야함. 왜냐 그 앞까지 자르기 떄문(4가 아니고 5인 이유)
 let sliced2 = arr5.slice(2);
 let sliced3 = arr5.slice(-3);
 
@@ -32,5 +34,5 @@ let sliced3 = arr5.slice(-3);
 let arr6 = [1, 2];
 let arr7 = [3, 4];
 
-let concatedArr = arr6.concat(arr7);
+let concatedArr = arr6.concat(arr7); //배열 붙이기
 console.log(concatedArr);

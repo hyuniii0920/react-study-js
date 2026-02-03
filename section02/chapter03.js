@@ -10,6 +10,8 @@ let person = {
   hobby: "테니스",
 };
 
+//let { name, age, hobby } = person;
+
 let {
   age: myAge,
   hobby,

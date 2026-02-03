@@ -44,7 +44,7 @@ let index = arr3.indexOf(20);
 let arr4 = [1, 2, 3];
 const findedIndex = arr4.findIndex(
   (item) => item === 999
-);
+); // 반환한 값이 true면 거기 인덱스 번호 나오고 false면 -1이나옴
 
 console.log(findedIndex);
 
