@@ -22,7 +22,25 @@ const mapResult1 = arr2.map((item, idx, arr) => {
 let names = arr1.map((item) => item.name);
 
 // 3. sort
+//원본 배열을 수정
 // 배열을 사전순으로 정렬하는 메서드
+//살짝 수학적 비교로 생각하기  (a-b) -> >0, <0, =0 
+//오름차순
+let arr3 = [10, 3, 5];
+arr3.sort((a, b) => {
+  if (a > b) {
+    // b가 a 앞에 와라
+    return 1;
+  } else if (a < b) {
+    // a가 b 앞에 와라
+    return -1;
+  } else {
+    // 두 값의 자리를 바꾸지 마라
+    return 0;
+  }
+});
+
+//내림차순
 let arr3 = [10, 3, 5];
 arr3.sort((a, b) => {
   if (a > b) {
@@ -38,12 +56,13 @@ arr3.sort((a, b) => {
 });
 
 // 4. toSorted (가장 최근에 추가된 최신 함수)
+//새롭게 만들어서 수정
 // 정렬된 새로운 배열을 반환하는 메서드
 let arr5 = ["c", "a", "b"];
 const sorted = arr5.toSorted();
 
 // 5. join
 // 배열의 모든 요소를 하나의 문자열로 합쳐서 반환하는 그런 메서드
-let arr6 = ["hi", "im", "winterlood"];
-const joined = arr6.join(" ");
+let arr6 = ["hi", "im", "winterlood"]; // 여기에 콤마는 구분자임 만약 바꾸고 싶으면 v
+const joined = arr6.join(" "); // <- 여기 join 에다가 넣으면 됨
 console.log(joined);

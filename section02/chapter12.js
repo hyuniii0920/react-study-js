@@ -20,6 +20,8 @@ function freezeFood(food, callback) {
   }, 1500);
 }
 
+
+//이게 많아지면 콜백 지옥으로 들어감
 orderFood((food) => {
   console.log(food);
 

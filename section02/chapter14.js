@@ -2,6 +2,7 @@
 // 어떤 함수를 비동기 함수로 만들어주는 키워드
 // 함수가 프로미스를 반환하도록 변환해주는 그런 키워드
 
+//동기적으로 작동하는 함수를 비동기로 바꿔줌
 async function getData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
